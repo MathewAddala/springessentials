@@ -1,0 +1,3 @@
+Bug-fix branch changes:
+- Corrected sample output
+- Added bug-fix notes

@@ -1,0 +1,3 @@
+Initialized a repository.
+Added sample files.
+Committed the initial version.
