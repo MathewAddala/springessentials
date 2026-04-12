@@ -1,0 +1,40 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  text-align: left;
+}
+
+.dashboard {
+  margin-bottom: 20px;
+}
+
+.dashboard button {
+  margin: 0 10px;
+}
+
+.user-list, .post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.user-item, .post-item {
+  border: 1px solid #ccc;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.error {
+  color: red;
+  text-align: center;
+}
