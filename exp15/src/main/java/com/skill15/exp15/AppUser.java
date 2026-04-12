@@ -1,0 +1,45 @@
+package com.skill15.exp15;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class AppUser {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    private String username;
+    private String password;
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
+    public AppUser() {
+    }
+
+    public AppUser(String username, String password, Role role) {
+        this.username = username;
+        this.password = password;
+        this.role = role;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+}
